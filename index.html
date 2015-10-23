@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Debate Panel</title>
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+        <link rel="shortcut icon" href="./assets/favicon.ico">
+        <style>
+        body {
+                font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+        }
+        .timer {
+            font-size: 18vh;
+        }
+        h1 {
+            font-size: 10vh;
+        }
+        h2 {
+            font-size: 8vh;
+        }
+        h3 {
+            font-size: 5vh;
+        }
+        h4 {
+            font-size: 3vh;
+        }
+        </style>
+        <meta name="renderer" content="webkit"/>
+    </head>
+
+    <body>
+        <script type="text/javascript" src="./js/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.js"></script>
+        <script type="text/javascript" src="./js/main.js"></script>
+        <div class="container" style="padding-top: 5vh">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="div_positive">
+                        <h2 class="text-left text-primary">The Affirmative</h21>
+                        <h3 class="text-left">Topic #1</h3>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="div_negative">
+                        <h2 class="text-right text-danger">The Negative</h2>
+                        <h3 class="text-right">Topic #2</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well">
+                        <h3 class="text-center">Elapsed Time<span id="elapsed_time" class="text-warning"></span></h3>
+                        <p id="text_time" class="text-center text-info timer">1:00</p>
+                        <div class="progress">
+                          <div id="div_progress_bar" class="progress-bar progress-bar-info progress-bar-striped" style="width: 100%;">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>The Control Panel</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="btn-group btn-group-justified">
+                        <a id="btn_change_to_positive" class="btn btn-lg btn-primary">The Affirmative</a>
+                        <a id="btn_change_to_negative" class="btn btn-lg btn-danger">The Negative</a>
+                        <a id="btn_reset_one_minute" class="btn btn-lg btn-default">Reset to 60s</a>
+                        <a id="btn_change_one_minute_half" class="btn btn-lg btn-default">Reset to 90s</a>
+                        <a id="btn_start_timer" class="btn btn-lg btn-success">Start</a>
+                        <a id="btn_stop_timer" class="btn btn-lg btn-info">Pause</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
